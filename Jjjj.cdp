@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <version>5.0</version>
+  <solution>
+    <solutionname>Jjjj</solutionname>
+    <solutionlocation>C:\Users\isa\Desktop\CodeTrigger</solutionlocation>
+    <buildsolution>True</buildsolution>
+    <refreshservices>False</refreshservices>
+    <projects>
+      <project>
+        <projectname>NorthwindTest3</projectname>
+        <codelanguage>CS</codelanguage>
+        <datasources>
+          <msql1datasource>
+            <datasourceid>6fb29ab7-2472-4239-b818-d8497b0732f4</datasourceid>
+            <datasourcename>zNorthwindTest3Conn</datasourcename>
+            <servername>.</servername>
+            <catalogue>NorthwindTest</catalogue>
+            <schemaname />
+            <usewindowsauthentication>True</usewindowsauthentication>
+            <sqlserverusername />
+            <sqlserverpassword />
+            <dao_enabled>True</dao_enabled>
+            <dao_interfacescope>True</dao_interfacescope>
+            <dao_implementationscope>True</dao_implementationscope>
+            <dao_classprefix>DAO</dao_classprefix>
+            <dao_classnamespace>NorthwindTest3.DataObjects</dao_classnamespace>
+            <dao_classoutputfolder>\Implementation</dao_classoutputfolder>
+            <dao_interfaceoutputfolder>\Interfaces</dao_interfaceoutputfolder>
+            <dao_classoutputfilepath>~\\NorthwindTest3.RestApi\DataObjects</dao_classoutputfilepath>
+            <dao_projectfilename>~\\NorthwindTest3.RestApi\NorthwindTest3.RestApi.csproj</dao_projectfilename>
+            <dao_spinlinesql>True</dao_spinlinesql>
+            <dao_spautoscriptdatabase>False</dao_spautoscriptdatabase>
+            <dao_sptblprefixestoignore>Tbl,Vw</dao_sptblprefixestoignore>
+            <dao_spprefix>ctpr</dao_spprefix>
+            <dao_spreturnerrorcode>False</dao_spreturnerrorcode>
+            <dao_spprefixparameters>False</dao_spprefixparameters>
+            <dao_spincludedropifexists>False</dao_spincludedropifexists>
+            <dao_spincludenocount>False</dao_spincludenocount>
+            <dao_spoutputfilepath>~\\NorthwindTest3.RestApi\DataObjects\Scripts</dao_spoutputfilepath>
+            <bo_enabled>True</bo_enabled>
+            <bo_interfacescope>True</bo_interfacescope>
+            <bo_implementationscope>True</bo_implementationscope>
+            <bo_includewcfattributes>False</bo_includewcfattributes>
+            <bo_classprefix>BO</bo_classprefix>
+            <bo_classnamespace>NorthwindTest3.BusinessObjects</bo_classnamespace>
+            <bo_classoutputfolder>\Implementation</bo_classoutputfolder>
+            <bo_interfaceoutputfolder>\Interfaces</bo_interfaceoutputfolder>
+            <bo_classoutputfilepath>~\\NorthwindTest3.RestApi\BusinessObjects</bo_classoutputfilepath>
+            <bo_projectfilename>~\\NorthwindTest3.RestApi\NorthwindTest3.RestApi.csproj</bo_projectfilename>
+          </msql1datasource>
+        </datasources>
+        <generalsettings>
+          <automaticallymodifyprojectfiles>True</automaticallymodifyprojectfiles>
+          <automaticallymodifyprojectconfigfiles>True</automaticallymodifyprojectconfigfiles>
+          <geninterfacedefinitions>False</geninterfacedefinitions>
+          <genconcurrencymanagement>False</genconcurrencymanagement>
+          <genrepositorypattern>False</genrepositorypattern>
+          <geninjectionattributes>False</geninjectionattributes>
+          <genloggingsupport>False</genloggingsupport>
+          <genexceptionhandlingsupport>False</genexceptionhandlingsupport>
+          <genunitofworkpattern>True</genunitofworkpattern>
+          <gensamples>False</gensamples>
+          <linkedprojects>
+            <linkedproject>
+              <linkedprojecttype>Mvc</linkedprojecttype>
+              <additionalattributes>
+                <genmvcidentity>False</genmvcidentity>
+                <mvcversion />
+              </additionalattributes>
+              <generate>True</generate>
+              <projectnamespace>NorthwindTest3.RestApi</projectnamespace>
+              <projectfolder>~\\NorthwindTest3.RestApi\</projectfolder>
+              <projectfilename>~\\NorthwindTest3.RestApi\NorthwindTest3.RestApi.csproj</projectfilename>
+              <projectconfigfilename>~\\NorthwindTest3.RestApi\Web.config</projectconfigfilename>
+              <projectdbconfigfilename>~\\NorthwindTest3.RestApi\generated.config</projectdbconfigfilename>
+              <dotnetversion />
+            </linkedproject>
+          </linkedprojects>
+          <escapedfiles />
+        </generalsettings>
+      </project>
+    </projects>
+  </solution>
+</configuration>

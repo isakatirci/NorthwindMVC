@@ -1,0 +1,166 @@
+
+@{
+    ViewBag.Title = "IdentityUser Index";
+}
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <div id = "list">
+        <h2 style = "text-align:center">IdentityUser List</h2>
+      <a href = "#" onclick="showedit(-1, true)">Add new item</a>
+      <table class="table input-sm">
+            <thead id = "listhead">
+                <tr>
+					<th valign="top">
+						User Id
+					</th>
+					<th valign="top">
+						Email
+					</th>
+					<th valign="top">
+						Email Confirmed
+					</th>
+					<th valign="top">
+						Password Hash
+					</th>
+					<th valign="top">
+						Security Stamp
+					</th>
+					<th valign="top">
+						Phone Number
+					</th>
+					<th valign="top">
+						Phone Number Confirmed
+					</th>
+					<th valign="top">
+						Two Factor Enabled
+					</th>
+					<th valign="top">
+						Lockout End Date Utc
+					</th>
+					<th valign="top">
+						Lockout Enabled
+					</th>
+					<th valign="top">
+						Access Failed Count
+					</th>
+					<th valign="top">
+						Username
+					</th>
+                  <th></th>
+                </tr>
+            </thead>
+            <tbody id="listbody"></tbody>
+        </table>
+        <ul class="pagination">
+        </ul>
+    </div>
+    <br />
+  <div id="edit" >
+        <h2 style = "text-align:center" id="formcaption">Edit Form</h2>
+        <form role="form" class="form-horizontal" id="editDetailForm" name="editDetailForm" >
+            <label hidden id="hiddenid" class="col-lg-12"></label>
+            <div class="col-sm-12" >
+                <div class="form-group form-group-sm" >
+                    <label class="col-sm-3 control-label" ></label>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "UserId" class="col-sm-3 control-label">UserId</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="UserId" name="UserId" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Email" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Email" name="Email" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "EmailConfirmed" class="col-sm-3 control-label">EmailConfirmed</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="EmailConfirmed" name="EmailConfirmed" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "PasswordHash" class="col-sm-3 control-label">PasswordHash</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="PasswordHash" name="PasswordHash" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "SecurityStamp" class="col-sm-3 control-label">SecurityStamp</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="SecurityStamp" name="SecurityStamp" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "PhoneNumber" class="col-sm-3 control-label">PhoneNumber</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="PhoneNumber" name="PhoneNumber" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "PhoneNumberConfirmed" class="col-sm-3 control-label">PhoneNumberConfirmed</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="PhoneNumberConfirmed" name="PhoneNumberConfirmed" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "TwoFactorEnabled" class="col-sm-3 control-label">TwoFactorEnabled</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="TwoFactorEnabled" name="TwoFactorEnabled" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "LockoutEndDateUtc" class="col-sm-3 control-label">LockoutEndDateUtc</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="LockoutEndDateUtc" name="LockoutEndDateUtc" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "LockoutEnabled" class="col-sm-3 control-label">LockoutEnabled</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="LockoutEnabled" name="LockoutEnabled" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "AccessFailedCount" class="col-sm-3 control-label">AccessFailedCount</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="AccessFailedCount" name="AccessFailedCount" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Username" class="col-sm-3 control-label">Username</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Username" name="Username" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <a href = '#' onclick='update()' id="updatebtn"> Update</a>
+                        <a href = '#' onclick='canceledit()'>Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+        
+</div>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js" ></script>
+<script src = "@Url.Content("~/SampleScripts/IdentityUser.js")" type= "text/javascript" ></script>
+

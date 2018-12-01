@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu>
+  <menuitem title="Categories" route="sample/page/categories" />
+  <menuitem title="CustomerCustomerDemo" route="sample/page/customercustomerdemo" />
+  <menuitem title="CustomerDemographics" route="sample/page/customerdemographics" />
+  <menuitem title="Customers" route="sample/page/customers" />
+  <menuitem title="Employees" route="sample/page/employees" />
+  <menuitem title="EmployeeTerritories" route="sample/page/employeeterritories" />
+  <menuitem title="OrderDetails" route="sample/page/orderdetails" />
+  <menuitem title="Orders" route="sample/page/orders" />
+  <menuitem title="Products" route="sample/page/products" />
+  <menuitem title="Region" route="sample/page/region" />
+  <menuitem title="Shippers" route="sample/page/shippers" />
+  <menuitem title="Suppliers" route="sample/page/suppliers" />
+  <menuitem title="Territories" route="sample/page/territories" />
+  <menuitem title="AlphabeticalListOfProducts" route="sample/page/alphabeticallistofproducts" />
+  <menuitem title="CategorySalesFor1997" route="sample/page/categorysalesfor1997" />
+  <menuitem title="CurrentProductList" route="sample/page/currentproductlist" />
+  <menuitem title="CustomerAndSuppliersByCity" route="sample/page/customerandsuppliersbycity" />
+  <menuitem title="Invoices" route="sample/page/ınvoices" />
+  <menuitem title="OrderDetailsExtended" route="sample/page/orderdetailsextended" />
+  <menuitem title="OrderSubtotals" route="sample/page/ordersubtotals" />
+  <menuitem title="OrdersQry" route="sample/page/ordersqry" />
+  <menuitem title="ProductSalesFor1997" route="sample/page/productsalesfor1997" />
+  <menuitem title="ProductsAboveAveragePrice" route="sample/page/productsaboveaverageprice" />
+  <menuitem title="ProductsByCategory" route="sample/page/productsbycategory" />
+  <menuitem title="QuarterlyOrders" route="sample/page/quarterlyorders" />
+  <menuitem title="SalesByCategory" route="sample/page/salesbycategory" />
+  <menuitem title="SalesTotalsByAmount" route="sample/page/salestotalsbyamount" />
+  <menuitem title="SummaryOfSalesByQuarter" route="sample/page/summaryofsalesbyquarter" />
+  <menuitem title="SummaryOfSalesByYear" route="sample/page/summaryofsalesbyyear" />
+  <menuitem title="IdentityRole" route="sample/page/ıdentityrole" />
+  <menuitem title="IdentityUser" route="sample/page/ıdentityuser" />
+  <menuitem title="IdentityUserClaim" route="sample/page/ıdentityuserclaim" />
+  <menuitem title="IdentityUserLogin" route="sample/page/ıdentityuserlogin" />
+  <menuitem title="IdentityUserProfile" route="sample/page/ıdentityuserprofile" />
+  <menuitem title="IdentityUserRole" route="sample/page/ıdentityuserrole" />
+</menu>

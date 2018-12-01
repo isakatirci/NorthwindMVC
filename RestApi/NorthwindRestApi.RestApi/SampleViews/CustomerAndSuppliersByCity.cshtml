@@ -1,0 +1,38 @@
+
+@{
+    ViewBag.Title = "CustomerAndSuppliersByCity Index";
+}
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <div id = "list">
+        <h2 style = "text-align:center">CustomerAndSuppliersByCity List</h2>
+      <table class="table input-sm">
+            <thead id = "listhead">
+                <tr>
+					<th valign="top">
+						City
+					</th>
+					<th valign="top">
+						Company Name
+					</th>
+					<th valign="top">
+						Contact Name
+					</th>
+					<th valign="top">
+						Relationship
+					</th>
+                  <th></th>
+                </tr>
+            </thead>
+            <tbody id="listbody"></tbody>
+        </table>
+        <ul class="pagination">
+        </ul>
+    </div>
+    <br />
+        
+</div>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js" ></script>
+<script src = "@Url.Content("~/SampleScripts/CustomerAndSuppliersByCity.js")" type= "text/javascript" ></script>
+

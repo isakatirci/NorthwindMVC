@@ -1,0 +1,59 @@
+
+@{
+    ViewBag.Title = "AlphabeticalListOfProducts Index";
+}
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <div id = "list">
+        <h2 style = "text-align:center">AlphabeticalListOfProducts List</h2>
+      <table class="table input-sm">
+            <thead id = "listhead">
+                <tr>
+					<th valign="top">
+						Product ID
+					</th>
+					<th valign="top">
+						Product Name
+					</th>
+					<th valign="top">
+						Supplier ID
+					</th>
+					<th valign="top">
+						Category ID
+					</th>
+					<th valign="top">
+						Quantity Per Unit
+					</th>
+					<th valign="top">
+						Unit Price
+					</th>
+					<th valign="top">
+						Units In Stock
+					</th>
+					<th valign="top">
+						Units On Order
+					</th>
+					<th valign="top">
+						Reorder Level
+					</th>
+					<th valign="top">
+						Discontinued
+					</th>
+					<th valign="top">
+						Category Name
+					</th>
+                  <th></th>
+                </tr>
+            </thead>
+            <tbody id="listbody"></tbody>
+        </table>
+        <ul class="pagination">
+        </ul>
+    </div>
+    <br />
+        
+</div>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js" ></script>
+<script src = "@Url.Content("~/SampleScripts/AlphabeticalListOfProducts.js")" type= "text/javascript" ></script>
+

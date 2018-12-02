@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <version>5.0</version>
+  <solution>
+    <solutionname>NorthwindClassLibrary</solutionname>
+    <solutionlocation>C:\Users\isa\Desktop\CodeTrigger\Console</solutionlocation>
+    <buildsolution>True</buildsolution>
+    <refreshservices>False</refreshservices>
+    <projects>
+      <project>
+        <projectname>NorthwindClassLibray</projectname>
+        <codelanguage>CS</codelanguage>
+        <datasources>
+          <mysql1datasource>
+            <datasourceid>6fc33974-fa8c-4426-9497-9b40eb90c694</datasourceid>
+            <datasourcename>zNorthwindClassLibrayConn</datasourcename>
+            <host>localhost</host>
+            <port>3306</port>
+            <schemaname>northwind</schemaname>
+            <mysqlusername>root</mysqlusername>
+            <mysqlpassword />
+            <dao_enabled>True</dao_enabled>
+            <dao_interfacescope>True</dao_interfacescope>
+            <dao_implementationscope>True</dao_implementationscope>
+            <dao_classprefix>DAO</dao_classprefix>
+            <dao_classnamespace>NorthwindClassLibray.DataObjects</dao_classnamespace>
+            <dao_classoutputfolder>\Implementation</dao_classoutputfolder>
+            <dao_interfaceoutputfolder>\Interfaces</dao_interfaceoutputfolder>
+            <dao_classoutputfilepath>~\\NorthwindClassLibray\DataObjects</dao_classoutputfilepath>
+            <dao_projectfilename>~\\NorthwindClassLibray\NorthwindClassLibray.csproj</dao_projectfilename>
+            <dao_spinlinesql>False</dao_spinlinesql>
+            <dao_spautoscriptdatabase>False</dao_spautoscriptdatabase>
+            <dao_sptblprefixestoignore>Tbl,Vw</dao_sptblprefixestoignore>
+            <dao_spprefix>ctpr_</dao_spprefix>
+            <dao_spreturnerrorcode>False</dao_spreturnerrorcode>
+            <dao_spprefixparameters>False</dao_spprefixparameters>
+            <dao_spincludedropifexists>False</dao_spincludedropifexists>
+            <dao_spincludenocount>False</dao_spincludenocount>
+            <dao_spoutputfilepath>~\\NorthwindClassLibray\DataObjects\Scripts</dao_spoutputfilepath>
+            <bo_enabled>True</bo_enabled>
+            <bo_interfacescope>True</bo_interfacescope>
+            <bo_implementationscope>True</bo_implementationscope>
+            <bo_includewcfattributes>False</bo_includewcfattributes>
+            <bo_classprefix>BO</bo_classprefix>
+            <bo_classnamespace>NorthwindClassLibray.BusinessObjects</bo_classnamespace>
+            <bo_classoutputfolder>\Implementation</bo_classoutputfolder>
+            <bo_interfaceoutputfolder>\Interfaces</bo_interfaceoutputfolder>
+            <bo_classoutputfilepath>~\\NorthwindClassLibray\BusinessObjects</bo_classoutputfilepath>
+            <bo_projectfilename>~\\NorthwindClassLibray\NorthwindClassLibray.csproj</bo_projectfilename>
+          </mysql1datasource>
+        </datasources>
+        <generalsettings>
+          <automaticallymodifyprojectfiles>True</automaticallymodifyprojectfiles>
+          <automaticallymodifyprojectconfigfiles>True</automaticallymodifyprojectconfigfiles>
+          <geninterfacedefinitions>True</geninterfacedefinitions>
+          <genconcurrencymanagement>True</genconcurrencymanagement>
+          <genrepositorypattern>True</genrepositorypattern>
+          <geninjectionattributes>True</geninjectionattributes>
+          <genloggingsupport>True</genloggingsupport>
+          <genexceptionhandlingsupport>True</genexceptionhandlingsupport>
+          <genunitofworkpattern>True</genunitofworkpattern>
+          <gensamples>False</gensamples>
+          <linkedprojects>
+            <linkedproject>
+              <linkedprojecttype>ClassLib</linkedprojecttype>
+              <additionalattributes />
+              <generate>True</generate>
+              <projectnamespace>NorthwindClassLibray</projectnamespace>
+              <projectfolder>~\\NorthwindClassLibray\</projectfolder>
+              <projectfilename>~\\NorthwindClassLibray\NorthwindClassLibray.csproj</projectfilename>
+              <projectconfigfilename>~\\NorthwindClassLibray\App.config</projectconfigfilename>
+              <projectdbconfigfilename>~\\NorthwindClassLibray\generated.config</projectdbconfigfilename>
+              <dotnetversion />
+            </linkedproject>
+          </linkedprojects>
+          <escapedfiles />
+        </generalsettings>
+      </project>
+    </projects>
+  </solution>
+</configuration>

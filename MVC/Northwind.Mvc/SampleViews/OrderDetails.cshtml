@@ -1,0 +1,146 @@
+
+@{
+    ViewBag.Title = "OrderDetails Index";
+}
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <div id = "list">
+        <h2 style = "text-align:center">OrderDetails List</h2>
+      <a href = "#" onclick="showedit(-1, true)">Add new item</a>
+      <table class="table input-sm">
+            <thead id = "listhead">
+                <tr>
+					<th valign="top">
+						İd
+					</th>
+					<th valign="top">
+						Order İd
+					</th>
+					<th valign="top">
+						Product İd
+					</th>
+					<th valign="top">
+						Quantity
+					</th>
+					<th valign="top">
+						Unit Price
+					</th>
+					<th valign="top">
+						Discount
+					</th>
+					<th valign="top">
+						Status İd
+					</th>
+					<th valign="top">
+						Date Allocated
+					</th>
+					<th valign="top">
+						Purchase Order İd
+					</th>
+					<th valign="top">
+						İnventory İd
+					</th>
+                  <th></th>
+                </tr>
+            </thead>
+            <tbody id="listbody"></tbody>
+        </table>
+        <ul class="pagination">
+        </ul>
+    </div>
+    <br />
+  <div id="edit" >
+        <h2 style = "text-align:center" id="formcaption">Edit Form</h2>
+        <form role="form" class="form-horizontal" id="editDetailForm" name="editDetailForm" >
+            <label hidden id="hiddenid" class="col-lg-12"></label>
+            <div class="col-sm-12" >
+                <div class="form-group form-group-sm" >
+                    <label class="col-sm-3 control-label" ></label>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "İd" class="col-sm-3 control-label">İd</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="İd" name="İd" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Orderİd" class="col-sm-3 control-label">Orderİd</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Orderİd" name="Orderİd" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Productİd" class="col-sm-3 control-label">Productİd</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Productİd" name="Productİd" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Quantity" class="col-sm-3 control-label">Quantity</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Quantity" name="Quantity" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "UnitPrice" class="col-sm-3 control-label">UnitPrice</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="UnitPrice" name="UnitPrice" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Discount" class="col-sm-3 control-label">Discount</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Discount" name="Discount" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Statusİd" class="col-sm-3 control-label">Statusİd</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Statusİd" name="Statusİd" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "DateAllocated" class="col-sm-3 control-label">DateAllocated</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="DateAllocated" name="DateAllocated" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "PurchaseOrderİd" class="col-sm-3 control-label">PurchaseOrderİd</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="PurchaseOrderİd" name="PurchaseOrderİd" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "İnventoryİd" class="col-sm-3 control-label">İnventoryİd</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="İnventoryİd" name="İnventoryİd" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <a href = '#' onclick='update()' id="updatebtn"> Update</a>
+                        <a href = '#' onclick='canceledit()'>Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+        
+</div>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js" ></script>
+<script src = "@Url.Content("~/SampleScripts/OrderDetails.js")" type= "text/javascript" ></script>
+

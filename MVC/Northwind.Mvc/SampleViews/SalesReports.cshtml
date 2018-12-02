@@ -1,0 +1,96 @@
+
+@{
+    ViewBag.Title = "SalesReports Index";
+}
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <div id = "list">
+        <h2 style = "text-align:center">SalesReports List</h2>
+      <a href = "#" onclick="showedit(-1, true)">Add new item</a>
+      <table class="table input-sm">
+            <thead id = "listhead">
+                <tr>
+					<th valign="top">
+						Group By
+					</th>
+					<th valign="top">
+						Display
+					</th>
+					<th valign="top">
+						Title
+					</th>
+					<th valign="top">
+						Filter Row Source
+					</th>
+					<th valign="top">
+						Default
+					</th>
+                  <th></th>
+                </tr>
+            </thead>
+            <tbody id="listbody"></tbody>
+        </table>
+        <ul class="pagination">
+        </ul>
+    </div>
+    <br />
+  <div id="edit" >
+        <h2 style = "text-align:center" id="formcaption">Edit Form</h2>
+        <form role="form" class="form-horizontal" id="editDetailForm" name="editDetailForm" >
+            <label hidden id="hiddenid" class="col-lg-12"></label>
+            <div class="col-sm-12" >
+                <div class="form-group form-group-sm" >
+                    <label class="col-sm-3 control-label" ></label>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "GroupBy" class="col-sm-3 control-label">GroupBy</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="GroupBy" name="GroupBy" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Display" class="col-sm-3 control-label">Display</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Display" name="Display" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Title" class="col-sm-3 control-label">Title</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Title" name="Title" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "FilterRowSource" class="col-sm-3 control-label">FilterRowSource</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="FilterRowSource" name="FilterRowSource" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Default" class="col-sm-3 control-label">Default</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Default" name="Default" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <a href = '#' onclick='update()' id="updatebtn"> Update</a>
+                        <a href = '#' onclick='canceledit()'>Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+        
+</div>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js" ></script>
+<script src = "@Url.Content("~/SampleScripts/SalesReports.js")" type= "text/javascript" ></script>
+

@@ -1,0 +1,226 @@
+
+@{
+    ViewBag.Title = "Employees Index";
+}
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <div id = "list">
+        <h2 style = "text-align:center">Employees List</h2>
+      <a href = "#" onclick="showedit(-1, true)">Add new item</a>
+      <table class="table input-sm">
+            <thead id = "listhead">
+                <tr>
+					<th valign="top">
+						İd
+					</th>
+					<th valign="top">
+						Company
+					</th>
+					<th valign="top">
+						Last Name
+					</th>
+					<th valign="top">
+						First Name
+					</th>
+					<th valign="top">
+						Email Address
+					</th>
+					<th valign="top">
+						Job Title
+					</th>
+					<th valign="top">
+						Business Phone
+					</th>
+					<th valign="top">
+						Home Phone
+					</th>
+					<th valign="top">
+						Mobile Phone
+					</th>
+					<th valign="top">
+						Fax Number
+					</th>
+					<th valign="top">
+						Address
+					</th>
+					<th valign="top">
+						City
+					</th>
+					<th valign="top">
+						State Province
+					</th>
+					<th valign="top">
+						Zip Postal Code
+					</th>
+					<th valign="top">
+						Country Region
+					</th>
+					<th valign="top">
+						Web Page
+					</th>
+					<th valign="top">
+						Notes
+					</th>
+					<th valign="top">
+						Attachments
+					</th>
+                  <th></th>
+                </tr>
+            </thead>
+            <tbody id="listbody"></tbody>
+        </table>
+        <ul class="pagination">
+        </ul>
+    </div>
+    <br />
+  <div id="edit" >
+        <h2 style = "text-align:center" id="formcaption">Edit Form</h2>
+        <form role="form" class="form-horizontal" id="editDetailForm" name="editDetailForm" >
+            <label hidden id="hiddenid" class="col-lg-12"></label>
+            <div class="col-sm-12" >
+                <div class="form-group form-group-sm" >
+                    <label class="col-sm-3 control-label" ></label>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "İd" class="col-sm-3 control-label">İd</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="İd" name="İd" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Company" class="col-sm-3 control-label">Company</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Company" name="Company" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "LastName" class="col-sm-3 control-label">LastName</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="LastName" name="LastName" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "FirstName" class="col-sm-3 control-label">FirstName</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="FirstName" name="FirstName" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "EmailAddress" class="col-sm-3 control-label">EmailAddress</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="EmailAddress" name="EmailAddress" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "JobTitle" class="col-sm-3 control-label">JobTitle</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="JobTitle" name="JobTitle" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "BusinessPhone" class="col-sm-3 control-label">BusinessPhone</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="BusinessPhone" name="BusinessPhone" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "HomePhone" class="col-sm-3 control-label">HomePhone</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="HomePhone" name="HomePhone" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "MobilePhone" class="col-sm-3 control-label">MobilePhone</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="MobilePhone" name="MobilePhone" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "FaxNumber" class="col-sm-3 control-label">FaxNumber</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="FaxNumber" name="FaxNumber" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Address" class="col-sm-3 control-label">Address</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Address" name="Address" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "City" class="col-sm-3 control-label">City</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="City" name="City" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "StateProvince" class="col-sm-3 control-label">StateProvince</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="StateProvince" name="StateProvince" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "ZipPostalCode" class="col-sm-3 control-label">ZipPostalCode</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="ZipPostalCode" name="ZipPostalCode" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "CountryRegion" class="col-sm-3 control-label">CountryRegion</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="CountryRegion" name="CountryRegion" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "WebPage" class="col-sm-3 control-label">WebPage</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="WebPage" name="WebPage" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Notes" class="col-sm-3 control-label">Notes</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Notes" name="Notes" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Attachments" class="col-sm-3 control-label">Attachments</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Attachments" name="Attachments" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <a href = '#' onclick='update()' id="updatebtn"> Update</a>
+                        <a href = '#' onclick='canceledit()'>Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+        
+</div>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js" ></script>
+<script src = "@Url.Content("~/SampleScripts/Employees.js")" type= "text/javascript" ></script>
+

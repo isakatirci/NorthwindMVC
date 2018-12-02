@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu>
+  <menuitem title="Customers" route="sample/page/customers" />
+  <menuitem title="EmployeePrivileges" route="sample/page/employeeprivileges" />
+  <menuitem title="Employees" route="sample/page/employees" />
+  <menuitem title="İdentityrole" route="sample/page/identityrole" />
+  <menuitem title="İdentityuser" route="sample/page/identityuser" />
+  <menuitem title="İdentityuserclaim" route="sample/page/identityuserclaim" />
+  <menuitem title="İdentityuserlogin" route="sample/page/identityuserlogin" />
+  <menuitem title="İdentityuserprofile" route="sample/page/identityuserprofile" />
+  <menuitem title="İdentityuserrole" route="sample/page/identityuserrole" />
+  <menuitem title="İnventoryTransactionTypes" route="sample/page/inventorytransactiontypes" />
+  <menuitem title="İnventoryTransactions" route="sample/page/inventorytransactions" />
+  <menuitem title="İnvoices" route="sample/page/invoices" />
+  <menuitem title="OrderDetails" route="sample/page/orderdetails" />
+  <menuitem title="OrderDetailsStatus" route="sample/page/orderdetailsstatus" />
+  <menuitem title="Orders" route="sample/page/orders" />
+  <menuitem title="OrdersStatus" route="sample/page/ordersstatus" />
+  <menuitem title="OrdersTaxStatus" route="sample/page/orderstaxstatus" />
+  <menuitem title="Privileges" route="sample/page/privileges" />
+  <menuitem title="Products" route="sample/page/products" />
+  <menuitem title="PurchaseOrderDetails" route="sample/page/purchaseorderdetails" />
+  <menuitem title="PurchaseOrderStatus" route="sample/page/purchaseorderstatus" />
+  <menuitem title="PurchaseOrders" route="sample/page/purchaseorders" />
+  <menuitem title="SalesReports" route="sample/page/salesreports" />
+  <menuitem title="Shippers" route="sample/page/shippers" />
+  <menuitem title="Strings" route="sample/page/strings" />
+  <menuitem title="Suppliers" route="sample/page/suppliers" />
+</menu>

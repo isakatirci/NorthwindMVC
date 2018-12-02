@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC94300F-3B9E-40C1-A936-87F54FC7DD9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Northwind.Business</RootNamespace>
+    <AssemblyName>Northwind.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.5.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>$(SolutionDir)\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.13\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Interfaces\IQueryableCollection.cs" />
+    <Compile Include="Identity\Identityuser.cs" />
+    <Compile Include="Identity\RoleStore.cs" />
+    <Compile Include="Identity\UserStore.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Interfaces\IUnitOfWorkEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\IBOIdentityrole.cs" />
+    <Compile Include="Interfaces\IBOIdentityuser.cs" />
+    <Compile Include="Interfaces\IBOIdentityuserclaim.cs" />
+    <Compile Include="Interfaces\IBOIdentityuserlogin.cs" />
+    <Compile Include="Interfaces\IBOIdentityuserprofile.cs" />
+    <Compile Include="Interfaces\IBOIdentityuserrole.cs" />
+    <Compile Include="Interfaces\IzNorthwindConn_BaseBusiness.cs" />
+    <Compile Include="Implementation\Criteria.cs" />
+    <Compile Include="Implementation\CriteriaExpression.cs" />
+    <Compile Include="Implementation\BOİdentityrole.cs" />
+    <Compile Include="Implementation\BOİdentityuser.cs" />
+    <Compile Include="Implementation\BOİdentityuserclaim.cs" />
+    <Compile Include="Implementation\BOİdentityuserlogin.cs" />
+    <Compile Include="Implementation\BOİdentityuserprofile.cs" />
+    <Compile Include="Implementation\BOİdentityuserrole.cs" />
+    <Compile Include="Implementation\zNorthwindConn_BaseBusiness.cs" />
+    <Compile Include="Repository\Interfaces\IGenericRepository.cs" />
+    <Compile Include="Repository\Interfaces\IRepositoryConnection.cs" />
+    <Compile Include="Repository\Interfaces\InjectionPointAttribute.cs" />
+    <Compile Include="Repository\Interfaces\IİdentityroleRepository.cs" />
+    <Compile Include="Repository\Interfaces\IİdentityuserRepository.cs" />
+    <Compile Include="Repository\Interfaces\IİdentityuserclaimRepository.cs" />
+    <Compile Include="Repository\Interfaces\IİdentityuserloginRepository.cs" />
+    <Compile Include="Repository\Interfaces\IİdentityuserprofileRepository.cs" />
+    <Compile Include="Repository\Interfaces\IİdentityuserroleRepository.cs" />
+    <Compile Include="Repository\Implementation\IdentityroleRepository.cs" />
+    <Compile Include="Repository\Implementation\IdentityuserRepository.cs" />
+    <Compile Include="Repository\Implementation\IdentityuserclaimRepository.cs" />
+    <Compile Include="Repository\Implementation\IdentityuserloginRepository.cs" />
+    <Compile Include="Repository\Implementation\IdentityuserprofileRepository.cs" />
+    <Compile Include="Repository\Implementation\IdentityuserroleRepository.cs" />
+    <Compile Include="Repository\Implementation\RepositoryFactory.cs" />
+    <Compile Include="Interfaces\IBOCustomers.cs" />
+    <Compile Include="Interfaces\IBOEmployeePrivileges.cs" />
+    <Compile Include="Interfaces\IBOEmployees.cs" />
+    <Compile Include="Interfaces\IBOİnventoryTransactionTypes.cs" />
+    <Compile Include="Interfaces\IBOİnventoryTransactions.cs" />
+    <Compile Include="Interfaces\IBOİnvoices.cs" />
+    <Compile Include="Interfaces\IBOOrderDetails.cs" />
+    <Compile Include="Interfaces\IBOOrderDetailsStatus.cs" />
+    <Compile Include="Interfaces\IBOOrders.cs" />
+    <Compile Include="Interfaces\IBOOrdersStatus.cs" />
+    <Compile Include="Interfaces\IBOOrdersTaxStatus.cs" />
+    <Compile Include="Interfaces\IBOPrivileges.cs" />
+    <Compile Include="Interfaces\IBOProducts.cs" />
+    <Compile Include="Interfaces\IBOPurchaseOrderDetails.cs" />
+    <Compile Include="Interfaces\IBOPurchaseOrderStatus.cs" />
+    <Compile Include="Interfaces\IBOPurchaseOrders.cs" />
+    <Compile Include="Interfaces\IBOSalesReports.cs" />
+    <Compile Include="Interfaces\IBOShippers.cs" />
+    <Compile Include="Interfaces\IBOStrings.cs" />
+    <Compile Include="Interfaces\IBOSuppliers.cs" />
+    <Compile Include="Implementation\BOCustomers.cs" />
+    <Compile Include="Implementation\BOEmployeePrivileges.cs" />
+    <Compile Include="Implementation\BOEmployees.cs" />
+    <Compile Include="Implementation\BOİnventoryTransactionTypes.cs" />
+    <Compile Include="Implementation\BOİnventoryTransactions.cs" />
+    <Compile Include="Implementation\BOİnvoices.cs" />
+    <Compile Include="Implementation\BOOrderDetails.cs" />
+    <Compile Include="Implementation\BOOrderDetailsStatus.cs" />
+    <Compile Include="Implementation\BOOrders.cs" />
+    <Compile Include="Implementation\BOOrdersStatus.cs" />
+    <Compile Include="Implementation\BOOrdersTaxStatus.cs" />
+    <Compile Include="Implementation\BOPrivileges.cs" />
+    <Compile Include="Implementation\BOProducts.cs" />
+    <Compile Include="Implementation\BOPurchaseOrderDetails.cs" />
+    <Compile Include="Implementation\BOPurchaseOrderStatus.cs" />
+    <Compile Include="Implementation\BOPurchaseOrders.cs" />
+    <Compile Include="Implementation\BOSalesReports.cs" />
+    <Compile Include="Implementation\BOShippers.cs" />
+    <Compile Include="Implementation\BOStrings.cs" />
+    <Compile Include="Implementation\BOSuppliers.cs" />
+    <Compile Include="Repository\Interfaces\ICustomersRepository.cs" />
+    <Compile Include="Repository\Interfaces\IEmployeePrivilegesRepository.cs" />
+    <Compile Include="Repository\Interfaces\IEmployeesRepository.cs" />
+    <Compile Include="Repository\Interfaces\IİnventoryTransactionTypesRepository.cs" />
+    <Compile Include="Repository\Interfaces\IİnventoryTransactionsRepository.cs" />
+    <Compile Include="Repository\Interfaces\IİnvoicesRepository.cs" />
+    <Compile Include="Repository\Interfaces\IOrderDetailsRepository.cs" />
+    <Compile Include="Repository\Interfaces\IOrderDetailsStatusRepository.cs" />
+    <Compile Include="Repository\Interfaces\IOrdersRepository.cs" />
+    <Compile Include="Repository\Interfaces\IOrdersStatusRepository.cs" />
+    <Compile Include="Repository\Interfaces\IOrdersTaxStatusRepository.cs" />
+    <Compile Include="Repository\Interfaces\IPrivilegesRepository.cs" />
+    <Compile Include="Repository\Interfaces\IProductsRepository.cs" />
+    <Compile Include="Repository\Interfaces\IPurchaseOrderDetailsRepository.cs" />
+    <Compile Include="Repository\Interfaces\IPurchaseOrderStatusRepository.cs" />
+    <Compile Include="Repository\Interfaces\IPurchaseOrdersRepository.cs" />
+    <Compile Include="Repository\Interfaces\ISalesReportsRepository.cs" />
+    <Compile Include="Repository\Interfaces\IShippersRepository.cs" />
+    <Compile Include="Repository\Interfaces\IStringsRepository.cs" />
+    <Compile Include="Repository\Interfaces\ISuppliersRepository.cs" />
+    <Compile Include="Repository\Implementation\CustomersRepository.cs" />
+    <Compile Include="Repository\Implementation\EmployeePrivilegesRepository.cs" />
+    <Compile Include="Repository\Implementation\EmployeesRepository.cs" />
+    <Compile Include="Repository\Implementation\InventoryTransactionTypesRepository.cs" />
+    <Compile Include="Repository\Implementation\İnventoryTransactionsRepository.cs" />
+    <Compile Include="Repository\Implementation\InvoicesRepository.cs" />
+    <Compile Include="Repository\Implementation\OrderDetailsRepository.cs" />
+    <Compile Include="Repository\Implementation\OrderDetailsStatusRepository.cs" />
+    <Compile Include="Repository\Implementation\OrdersRepository.cs" />
+    <Compile Include="Repository\Implementation\OrdersStatusRepository.cs" />
+    <Compile Include="Repository\Implementation\OrdersTaxStatusRepository.cs" />
+    <Compile Include="Repository\Implementation\PrivilegesRepository.cs" />
+    <Compile Include="Repository\Implementation\ProductsRepository.cs" />
+    <Compile Include="Repository\Implementation\PurchaseOrderDetailsRepository.cs" />
+    <Compile Include="Repository\Implementation\PurchaseOrderStatusRepository.cs" />
+    <Compile Include="Repository\Implementation\PurchaseOrdersRepository.cs" />
+    <Compile Include="Repository\Implementation\SalesReportsRepository.cs" />
+    <Compile Include="Repository\Implementation\ShippersRepository.cs" />
+    <Compile Include="Repository\Implementation\StringsRepository.cs" />
+    <Compile Include="Repository\Implementation\SuppliersRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Data\Northwind.Data.csproj">
+      <Project>{3DA77F6B-9AC8-463A-BFB8-97FDC995A4B1}</Project>
+      <Name>Northwind.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

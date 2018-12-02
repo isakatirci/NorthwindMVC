@@ -1,0 +1,86 @@
+
+@{
+    ViewBag.Title = "İdentityuserclaim Index";
+}
+
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <div id = "list">
+        <h2 style = "text-align:center">İdentityuserclaim List</h2>
+      <a href = "#" onclick="showedit(-1, true)">Add new item</a>
+      <table class="table input-sm">
+            <thead id = "listhead">
+                <tr>
+					<th valign="top">
+						Id
+					</th>
+					<th valign="top">
+						User Id
+					</th>
+					<th valign="top">
+						Claim Type
+					</th>
+					<th valign="top">
+						Claim Value
+					</th>
+                  <th></th>
+                </tr>
+            </thead>
+            <tbody id="listbody"></tbody>
+        </table>
+        <ul class="pagination">
+        </ul>
+    </div>
+    <br />
+  <div id="edit" >
+        <h2 style = "text-align:center" id="formcaption">Edit Form</h2>
+        <form role="form" class="form-horizontal" id="editDetailForm" name="editDetailForm" >
+            <label hidden id="hiddenid" class="col-lg-12"></label>
+            <div class="col-sm-12" >
+                <div class="form-group form-group-sm" >
+                    <label class="col-sm-3 control-label" ></label>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "Id" class="col-sm-3 control-label">Id</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Id" name="Id" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "UserId" class="col-sm-3 control-label">UserId</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="UserId" name="UserId" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "ClaimType" class="col-sm-3 control-label">ClaimType</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="ClaimType" name="ClaimType" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm" >
+                    <label for= "ClaimValue" class="col-sm-3 control-label">ClaimValue</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="ClaimValue" name="ClaimValue" placeholder="Required" class="form-control input-sm" />
+                    </div>
+                </div>
+
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <a href = '#' onclick='update()' id="updatebtn"> Update</a>
+                        <a href = '#' onclick='canceledit()'>Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+        
+</div>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js" ></script>
+<script src = "@Url.Content("~/SampleScripts/İdentityuserclaim.js")" type= "text/javascript" ></script>
+
